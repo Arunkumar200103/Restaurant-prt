@@ -64,7 +64,7 @@ export default function App() {
   return (
     <>
       {/* Navbar */}
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
         <div className="container">
           <a href="#home" className="nav-logo" onClick={(e) => handleNavClick(e, '#home')}>
             <span className="nav-logo-mark">M</span>
