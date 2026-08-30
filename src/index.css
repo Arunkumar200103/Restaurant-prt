@@ -72,6 +72,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -1719,6 +1720,20 @@ button {
 @media (max-width: 700px) {
   .section {
     padding: var(--space-6) 0;
+  }
+
+  /* Make navbar solid on mobile initially to fix visibility issues */
+  .navbar {
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(12px);
+    padding: var(--space-2) 0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  }
+  .navbar .nav-logo {
+    color: var(--primary-500);
+  }
+  .navbar .nav-toggle span {
+    background: var(--neutral-800);
   }
 
   .nav-links,
